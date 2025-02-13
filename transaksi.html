@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Transaksi</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Add a background color to the body */
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto; /* Center the table */
+        }
+        td {
+            padding: 8px;
+        }
+        form {
+            width: 50%; /* Set a width for the form */
+            margin: 50px auto 0 auto; /* Center the form and add top margin */
+            background-color: #ffffff; /* Add a background color to the form */
+            padding: 20px; /* Add padding inside the form */
+            border-radius: 8px; /* Add rounded corners to the form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the form */
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td><label for="nama">Nama:</label></td>
+                <td><input type="text" id="nama" name="nama"></td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat:</label></td>
+                <td><input type="text" id="alamat" name="alamat"></td>
+            </tr>
+            <tr>
+                <td><label for="paket">Pilih Paket Sampling:</label></td>
+                <td>
+                    <select id="PaketSampling" name="Paket Sampling">
+                        <option value="paket1">Paket 1</option>
+                        <option value="paket2">Paket 2</option>
+                        <option value="paket3">Paket 3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="pembayaran">Pembayaran melalui:</label></td>
+                <td>
+                    <select id="pembayaran" name="pembayaran">
+                        <option value="bca">BCA</option>
+                        <option value="bri">BRI</option>
+                        <option value="panin">PANIN</option>
+                        <option value="mandiri">MANDIRI</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="keyboard">Seri Keyboard:</label></td>
+                <td><input type="text" id="keyboard" name="keyboard"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <p>Sampling akan Dikirim Melalui Whatsapp, Telegram, Facebook</p>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
